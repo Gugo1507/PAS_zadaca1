@@ -63,7 +63,7 @@ source install/setup.bash
 Pokretanje launch datoteke za vizualizaciju i upravljanje gui -em.
 
 ```bash
-ros2 launch fanuc_lrmate200ic_support view_fanuc.launch.py gui=true
+ros2 launch fanuc_lrmate200ic_support view_fanuc.launch.py gui:=true
 ```
 
 Ovo pokreće:
@@ -102,7 +102,7 @@ ros2 launch fanuc_lrmate200ic_support joint_trajectory.launch.py
 NAPOMENA: Ako se želi upravljati robota kontrolerima potrebno je prilikom vizualizacije robota isključiti gui:
 
 ```bash
-ros2 launch fanuc_lrmate200ic_support view_fanuc.launch.py gui=false
+ros2 launch fanuc_lrmate200ic_support view_fanuc.launch.py gui:=false
 ```
 
 Konfiguracija ciljeva se nalazi u:
